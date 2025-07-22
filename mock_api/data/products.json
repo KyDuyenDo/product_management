@@ -1,0 +1,337 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro",
+    "description": "Latest iPhone with A17 Pro chip, titanium design, and advanced camera system. Features include 48MP main camera, Action Button, and USB-C connectivity.",
+    "price": 2000,
+    "stock": 50,
+    "category_id": 1,
+    "category_name": "Electronics",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=1",
+    "images": [
+      "https://picsum.photos/400/400?random=1",
+      "https://picsum.photos/400/400?random=2",
+      "https://picsum.photos/400/400?random=3"
+    ],
+    "created_at": "2024-01-15T10:30:00.000Z",
+    "updated_at": "2025-07-22T05:56:20.811Z"
+  },
+  {
+    "id": 2,
+    "name": "MacBook Air M3",
+    "description": "Ultra-thin laptop with M3 chip, 13-inch Liquid Retina display, and all-day battery life. Perfect for students and professionals.",
+    "price": 1299,
+    "stock": 25,
+    "category_id": 1,
+    "category_name": "Electronics",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=4",
+    "images": [
+      "https://picsum.photos/400/400?random=4",
+      "https://picsum.photos/400/400?random=5"
+    ],
+    "created_at": "2024-01-14T09:15:00.000Z",
+    "updated_at": "2024-01-14T09:15:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Samsung Galaxy S24",
+    "description": "Flagship Android phone with AI features, excellent camera, and premium build quality. Includes S Pen support and 5G connectivity.",
+    "price": 899,
+    "stock": 75,
+    "category_id": 1,
+    "category_name": "Electronics",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=6",
+    "images": [
+      "https://picsum.photos/400/400?random=6",
+      "https://picsum.photos/400/400?random=7",
+      "https://picsum.photos/400/400?random=8"
+    ],
+    "created_at": "2024-01-13T14:20:00.000Z",
+    "updated_at": "2024-01-13T14:20:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Nike Air Max 270",
+    "description": "Comfortable running shoes with Max Air unit and breathable mesh upper. Available in multiple colors and sizes.",
+    "price": 150,
+    "stock": 100,
+    "category_id": 2,
+    "category_name": "Clothing",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=9",
+    "images": [
+      "https://picsum.photos/400/400?random=9",
+      "https://picsum.photos/400/400?random=10"
+    ],
+    "created_at": "2024-01-12T11:45:00.000Z",
+    "updated_at": "2024-01-12T11:45:00.000Z"
+  },
+  {
+    "id": 5,
+    "name": "Levi's 501 Jeans",
+    "description": "Classic straight-fit jeans made from premium denim with authentic styling. Timeless design that never goes out of style.",
+    "price": 89,
+    "stock": 200,
+    "category_id": 2,
+    "category_name": "Clothing",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=11",
+    "images": [
+      "https://picsum.photos/400/400?random=11",
+      "https://picsum.photos/400/400?random=12"
+    ],
+    "created_at": "2024-01-11T16:30:00.000Z",
+    "updated_at": "2024-01-11T16:30:00.000Z"
+  },
+  {
+    "id": 6,
+    "name": "Clean Code",
+    "description": "A handbook of agile software craftsmanship by Robert C. Martin. Essential reading for any serious programmer.",
+    "price": 42,
+    "stock": 150,
+    "category_id": 3,
+    "category_name": "Books",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=13",
+    "images": [
+      "https://picsum.photos/400/400?random=13"
+    ],
+    "created_at": "2024-01-10T08:00:00.000Z",
+    "updated_at": "2024-01-10T08:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "name": "The Pragmatic Programmer",
+    "description": "Your journey to mastery by David Thomas and Andrew Hunt. Updated for the modern software development landscape.",
+    "price": 39,
+    "stock": 80,
+    "category_id": 3,
+    "category_name": "Books",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=14",
+    "images": [
+      "https://picsum.photos/400/400?random=14"
+    ],
+    "created_at": "2024-01-09T13:25:00.000Z",
+    "updated_at": "2024-01-09T13:25:00.000Z"
+  },
+  {
+    "id": 8,
+    "name": "Dyson V15 Detect",
+    "description": "Powerful cordless vacuum with laser dust detection and advanced filtration. Perfect for deep cleaning all floor types.",
+    "price": 649,
+    "stock": 30,
+    "category_id": 4,
+    "category_name": "Home & Garden",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=15",
+    "images": [
+      "https://picsum.photos/400/400?random=15",
+      "https://picsum.photos/400/400?random=16"
+    ],
+    "created_at": "2024-01-08T10:10:00.000Z",
+    "updated_at": "2024-01-08T10:10:00.000Z"
+  },
+  {
+    "id": 9,
+    "name": "Instant Pot Duo 7-in-1",
+    "description": "Multi-use pressure cooker, slow cooker, rice cooker, steamer, and more. Makes cooking faster and easier.",
+    "price": 99,
+    "stock": 120,
+    "category_id": 4,
+    "category_name": "Home & Garden",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=17",
+    "images": [
+      "https://picsum.photos/400/400?random=17",
+      "https://picsum.photos/400/400?random=18"
+    ],
+    "created_at": "2024-01-07T15:40:00.000Z",
+    "updated_at": "2024-01-07T15:40:00.000Z"
+  },
+  {
+    "id": 10,
+    "name": "Wilson Pro Staff Tennis Racket",
+    "description": "Professional tennis racket used by top players worldwide. Excellent control and power for competitive play.",
+    "price": 249,
+    "stock": 45,
+    "category_id": 5,
+    "category_name": "Sports",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=19",
+    "images": [
+      "https://picsum.photos/400/400?random=19",
+      "https://picsum.photos/400/400?random=20"
+    ],
+    "created_at": "2024-01-06T12:15:00.000Z",
+    "updated_at": "2024-01-06T12:15:00.000Z"
+  },
+  {
+    "id": 11,
+    "name": "Premium Yoga Mat",
+    "description": "Non-slip yoga mat with excellent grip and cushioning for all yoga practices. Made from eco-friendly materials.",
+    "price": 59,
+    "stock": 90,
+    "category_id": 5,
+    "category_name": "Sports",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=21",
+    "images": [
+      "https://picsum.photos/400/400?random=21"
+    ],
+    "created_at": "2024-01-05T09:30:00.000Z",
+    "updated_at": "2024-01-05T09:30:00.000Z"
+  },
+  {
+    "id": 12,
+    "name": "Fenty Beauty Foundation",
+    "description": "Full-coverage foundation with 40 shades for all skin tones. Long-lasting and buildable coverage.",
+    "price": 36,
+    "stock": 200,
+    "category_id": 6,
+    "category_name": "Beauty",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=22",
+    "images": [
+      "https://picsum.photos/400/400?random=22",
+      "https://picsum.photos/400/400?random=23"
+    ],
+    "created_at": "2024-01-04T14:50:00.000Z",
+    "updated_at": "2024-01-04T14:50:00.000Z"
+  },
+  {
+    "id": 13,
+    "name": "The Ordinary Niacinamide",
+    "description": "High-strength vitamin and zinc serum for blemish-prone skin. Reduces appearance of skin blemishes and congestion.",
+    "price": 7.9,
+    "stock": 300,
+    "category_id": 6,
+    "category_name": "Beauty",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=24",
+    "images": [
+      "https://picsum.photos/400/400?random=24"
+    ],
+    "created_at": "2024-01-03T11:20:00.000Z",
+    "updated_at": "2024-01-03T11:20:00.000Z"
+  },
+  {
+    "id": 14,
+    "name": "LEGO Creator Expert",
+    "description": "Advanced building set for adult LEGO enthusiasts with detailed instructions. Features intricate design and premium pieces.",
+    "price": 199,
+    "stock": 60,
+    "category_id": 7,
+    "category_name": "Toys",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=25",
+    "images": [
+      "https://picsum.photos/400/400?random=25",
+      "https://picsum.photos/400/400?random=26"
+    ],
+    "created_at": "2024-01-02T16:45:00.000Z",
+    "updated_at": "2024-01-02T16:45:00.000Z"
+  },
+  {
+    "id": 15,
+    "name": "Nintendo Switch OLED",
+    "description": "Gaming console with vibrant OLED screen and enhanced audio. Includes dock for TV play and portable gaming.",
+    "price": 349,
+    "stock": 40,
+    "category_id": 7,
+    "category_name": "Toys",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=27",
+    "images": [
+      "https://picsum.photos/400/400?random=27",
+      "https://picsum.photos/400/400?random=28"
+    ],
+    "created_at": "2024-01-01T10:00:00.000Z",
+    "updated_at": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "id": 16,
+    "name": "Organic Honey",
+    "description": "Pure organic honey sourced from local beekeepers. Raw and unprocessed with natural enzymes and nutrients.",
+    "price": 24,
+    "stock": 150,
+    "category_id": 8,
+    "category_name": "Food",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=29",
+    "images": [
+      "https://picsum.photos/400/400?random=29"
+    ],
+    "created_at": "2023-12-31T13:30:00.000Z",
+    "updated_at": "2023-12-31T13:30:00.000Z"
+  },
+  {
+    "id": 17,
+    "name": "Premium Coffee Beans",
+    "description": "Single-origin arabica coffee beans with rich flavor profile. Freshly roasted and ethically sourced.",
+    "price": 18,
+    "stock": 100,
+    "category_id": 8,
+    "category_name": "Food",
+    "stock_status": "In Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=30",
+    "images": [
+      "https://picsum.photos/400/400?random=30",
+      "https://picsum.photos/400/400?random=31"
+    ],
+    "created_at": "2023-12-30T08:45:00.000Z",
+    "updated_at": "2023-12-30T08:45:00.000Z"
+  },
+  {
+    "id": 18,
+    "name": "Limited Edition Watch",
+    "description": "Luxury timepiece with Swiss movement and premium materials. Limited production run with certificate of authenticity.",
+    "price": 1299,
+    "stock": 5,
+    "category_id": 2,
+    "category_name": "Clothing",
+    "stock_status": "Low Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=32",
+    "images": [
+      "https://picsum.photos/400/400?random=32",
+      "https://picsum.photos/400/400?random=33"
+    ],
+    "created_at": "2023-12-29T15:20:00.000Z",
+    "updated_at": "2023-12-29T15:20:00.000Z"
+  },
+  {
+    "id": 19,
+    "name": "Vintage Vinyl Record",
+    "description": "Rare vinyl record from the 1970s in excellent condition. Collector's item with original sleeve and liner notes.",
+    "price": 89,
+    "stock": 3,
+    "category_id": 1,
+    "category_name": "Electronics",
+    "stock_status": "Low Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=34",
+    "images": [
+      "https://picsum.photos/400/400?random=34"
+    ],
+    "created_at": "2023-12-28T12:10:00.000Z",
+    "updated_at": "2023-12-28T12:10:00.000Z"
+  },
+  {
+    "id": 20,
+    "name": "Out of Stock Product",
+    "description": "This product is currently out of stock but will be restocked soon. Sign up for notifications when available.",
+    "price": 299,
+    "stock": 0,
+    "category_id": 1,
+    "category_name": "Electronics",
+    "stock_status": "Out of Stock",
+    "thumbnail": "https://picsum.photos/400/400?random=35",
+    "images": [
+      "https://picsum.photos/400/400?random=35"
+    ],
+    "created_at": "2023-12-27T09:55:00.000Z",
+    "updated_at": "2023-12-27T09:55:00.000Z"
+  }
+]
