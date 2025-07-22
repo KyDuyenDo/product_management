@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:product_management_client/core/enum/product_change_type.dart';
 import 'package:product_management_client/core/error/failures.dart';
 import 'package:product_management_client/core/usecase/usecase.dart';
 import 'package:product_management_client/features/product/domain/entities/category.dart';
@@ -22,6 +23,7 @@ class ProductListBloc extends Bloc<ProductListEvent, ProductListState> {
     on<ClearFiltersEvent>(_onClearFilters);
     on<LoadCategoriesEvent>(_onLoadCategories);
     on<UpdateProductsAfterDeleteEvent>(_onUpdateProductAfterDelete);
+    on<UpdateProductsEvent>(_onUpdateProducts);
   }
 
   Future<void> _onLoadProducts(
@@ -82,6 +84,27 @@ class ProductListBloc extends Bloc<ProductListEvent, ProductListState> {
           emit(state.copyWith(errorMessage: _mapFailureToMessage(failure))),
       (categories) => emit(state.copyWith(categories: categories)),
     );
+  }
+
+  Future<void> _onUpdateProducts(
+    UpdateProductsEvent event,
+    Emitter<ProductListState> emit,
+  ) async {
+    if (event.type == ProductChangeType.addProduct) {
+      emit(
+        state.copyWith(
+          products: List<Product>.from(state.products)..add(event.product),
+        ),
+      );
+    } else {
+      final updatedList = List<Product>.from(state.products);
+      final index = updatedList.indexWhere((p) => p.id == event.product.id);
+      if (index != -1) {
+        updatedList[index] = event.product;
+
+        emit(state.copyWith(products: updatedList));
+      }
+    }
   }
 
   Future<void> _onUpdateProductAfterDelete(

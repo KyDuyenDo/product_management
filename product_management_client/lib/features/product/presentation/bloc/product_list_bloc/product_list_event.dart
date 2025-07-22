@@ -1,5 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+import 'package:product_management_client/core/enum/product_change_type.dart';
+import 'package:product_management_client/features/product/domain/entities/product.dart';
 
 abstract class ProductListEvent extends Equatable {
   const ProductListEvent();
@@ -14,6 +16,15 @@ class UpdateProductsAfterDeleteEvent extends ProductListEvent {
 
   @override
   List<Object> get props => [productId];
+}
+
+class UpdateProductsEvent extends ProductListEvent {
+  final Product product;
+  final ProductChangeType type;
+  const UpdateProductsEvent(this.product, this.type);
+
+  @override
+  List<Object> get props => [product, type];
 }
 
 class LoadProductsEvent extends ProductListEvent {}

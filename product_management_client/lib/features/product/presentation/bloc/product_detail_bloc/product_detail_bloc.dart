@@ -16,6 +16,7 @@ class ProductDetailBloc extends Bloc<ProductDetailEvent, ProductDetailState> {
     on<LoadProductDetailEvent>(_onLoadProductDetail);
     on<RefreshProductDetailEvent>(_onRefreshProductDetail);
     on<DeleteProductEvent>(_onDeleteProduct);
+    on<UpdateProductDetailEvent>(_onUpdateProductDetail);
   }
 
   Future<void> _onLoadProductDetail(
@@ -47,6 +48,13 @@ class ProductDetailBloc extends Bloc<ProductDetailEvent, ProductDetailState> {
           emit(ProductDetailState.error(_mapFailureToMessage(failure))),
       (product) => emit(ProductDetailState.loaded(product: product)),
     );
+  }
+
+  Future<void> _onUpdateProductDetail(
+    UpdateProductDetailEvent event,
+    Emitter<ProductDetailState> emit,
+  ) async {
+    emit(state.copyWith(product: event.product));
   }
 
   Future<void> _onDeleteProduct(

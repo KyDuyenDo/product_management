@@ -14,7 +14,7 @@ import 'package:product_management_client/features/product/presentation/widgets/
 class ProductFormPage extends StatelessWidget {
   final String title;
   final int? productId;
-  final VoidCallback? onChanged;
+  final Function(Product product, ProductChangeType type)? onChanged;
 
   const ProductFormPage({
     super.key,
@@ -149,12 +149,23 @@ class ProductFormPage extends StatelessWidget {
                         DialogUtils.showProductUpdated(context).then((_) {
                           Navigator.of(context).pop();
                         });
+                        if (state.product != null) {
+                          onChanged!(
+                            state.product!,
+                            ProductChangeType.editProduct,
+                          );
+                        }
                       } else {
                         DialogUtils.showProductCreated(context).then((_) {
                           Navigator.of(context).pop();
                         });
+                        if (state.product != null) {
+                          onChanged!(
+                            state.product!,
+                            ProductChangeType.addProduct,
+                          );
+                        }
                       }
-                      onChanged?.call();
                     }
 
                     if (state.errorMessage != null) {

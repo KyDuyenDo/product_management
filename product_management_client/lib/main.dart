@@ -130,10 +130,15 @@ class _AppNavigatorState extends State<AppNavigator> {
                     child: ProductFormPage(
                       title: title,
                       productId: productId,
-                      onChanged: () {
+                      onChanged: (product, type) {
                         context.read<ProductListBloc>().add(
-                          RefreshProductsEvent(),
+                          UpdateProductsEvent(product, type),
                         );
+                        if (type == ProductChangeType.editProduct) {
+                          context.read<ProductDetailBloc>().add(
+                            UpdateProductDetailEvent(product),
+                          );
+                        }
                       },
                     ),
                   ),
