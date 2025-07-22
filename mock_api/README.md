@@ -37,7 +37,7 @@ Server runs on `http://localhost:3000`
 
 ```bash
 # Get products with search and pagination
-curl "http://localhost:3000/products?q=iPhone&categoryId=1&page=1&limit=10"
+curl "http://localhost:3000/products?q=iPhone&categoryId=1"
 
 # Create product
 curl -X POST http://localhost:3000/products   -H "Content-Type: application/json"   -d '{
