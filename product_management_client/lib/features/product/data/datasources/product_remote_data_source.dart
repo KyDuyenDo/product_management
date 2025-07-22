@@ -23,7 +23,7 @@ class ProductRemoteDataSourceImpl implements ProductRemoteDataSource {
 
   ProductRemoteDataSourceImpl({required this.client});
 
-  final baseUrl = "http://192.168.1.6:3000";
+  final baseUrl = "https://mock-api-bjd9.onrender.com";
 
   @override
   Future<List<ProductModel>> getProducts({

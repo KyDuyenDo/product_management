@@ -26,13 +26,11 @@ class _CarouselState extends State<Carousel> {
   final PageController _pageController = PageController();
   int _currentIndex = 0;
 
-  static const List<String> _defaultImages = [
-    'https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1568455300105-1X8EOW3FLT27EN19OO30/chup-anh-san-pham-shynh2019-4.jpg',
-    'https://www.chuphinhsanpham.vn/wp-content/uploads/2019/07/studio-chup-anh-my-pham-tphcm-1.jpg',
-    'https://juro.com.vn/wp-content/uploads/chup-anh-san-pham-my-pham.jpg',
-  ];
-
-  List<String> get _effectiveImages => widget.images ?? _defaultImages;
+  List<String> get _effectiveImages =>
+      widget.images ??
+      [
+        "https://www.huber-online.com/daisy_website_files/_processed_/8/0/csm_no-image_d5c4ab1322.jpg",
+      ];
 
   @override
   void dispose() {
@@ -69,9 +67,11 @@ class _CarouselState extends State<Carousel> {
                   color: const Color(0xFFEEEEEE),
                   child: Center(
                     child: CircularProgressIndicator(
-                      value: loadingProgress.expectedTotalBytes != null
-                          ? loadingProgress.cumulativeBytesLoaded / loadingProgress.expectedTotalBytes!
-                          : null,
+                      value:
+                          loadingProgress.expectedTotalBytes != null
+                              ? loadingProgress.cumulativeBytesLoaded /
+                                  loadingProgress.expectedTotalBytes!
+                              : null,
                     ),
                   ),
                 );
@@ -88,7 +88,10 @@ class _CarouselState extends State<Carousel> {
                       children: [
                         Icon(Icons.error_outline, size: 48, color: Colors.grey),
                         SizedBox(height: 8),
-                        Text('Failed to load image', style: TextStyle(color: Colors.grey, fontSize: 14)),
+                        Text(
+                          'Failed to load image',
+                          style: TextStyle(color: Colors.grey, fontSize: 14),
+                        ),
                       ],
                     ),
                   ),
