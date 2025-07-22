@@ -63,7 +63,11 @@ class ProductListBloc extends Bloc<ProductListEvent, ProductListState> {
     Emitter<ProductListState> emit,
   ) async {
     emit(state.copyWith(isLoading: true));
-    await _loadData(emit, sortType: event.sortType);
+    await _loadData(
+      emit,
+      sortType: event.sortType,
+      categoryId: state.selectedCategoryId,
+    );
   }
 
   Future<void> _onClearFilters(
@@ -129,8 +133,6 @@ class ProductListBloc extends Bloc<ProductListEvent, ProductListState> {
     final effectiveQuery = query ?? state.searchQuery;
     final effectiveCategoryId = categoryId;
     final effectiveSortType = sortType ?? state.sortType;
-
-    print(effectiveCategoryId);
 
     final results = await Future.wait([
       getProducts(
