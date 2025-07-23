@@ -134,11 +134,6 @@ class _AppNavigatorState extends State<AppNavigator> {
                         context.read<ProductListBloc>().add(
                           UpdateProductsEvent(product, type),
                         );
-                        if (type == ProductChangeType.editProduct) {
-                          context.read<ProductDetailBloc>().add(
-                            UpdateProductDetailEvent(product),
-                          );
-                        }
                       },
                     ),
                   ),
