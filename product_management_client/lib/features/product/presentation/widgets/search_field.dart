@@ -56,8 +56,6 @@ class _SearchFieldState extends State<SearchField> {
   }
 
   void _handleSearch() {
-    print('SearchField: Search button pressed');
-    // Unfocus để ẩn keyboard
     _focusNode.unfocus();
     if (widget.onSearch != null) {
       widget.onSearch!();
@@ -65,8 +63,6 @@ class _SearchFieldState extends State<SearchField> {
   }
 
   void _handleSubmitted(String value) {
-    print('SearchField: Text submitted via keyboard');
-    // Khi người dùng nhấn search trên keyboard
     _handleSearch();
   }
 
@@ -74,7 +70,6 @@ class _SearchFieldState extends State<SearchField> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Khi tap vào container, focus vào text field
         if (widget.enabled) {
           _focusNode.requestFocus();
         }
@@ -120,7 +115,7 @@ class _SearchFieldState extends State<SearchField> {
           isDense: true,
         ),
         onChanged: widget.onChanged,
-        onSubmitted: _handleSubmitted, // Xử lý khi nhấn search trên keyboard
+        onSubmitted: _handleSubmitted,
         textInputAction: TextInputAction.search,
       ),
     );

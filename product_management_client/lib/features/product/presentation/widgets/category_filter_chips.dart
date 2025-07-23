@@ -4,7 +4,7 @@ import '../../domain/entities/category.dart';
 
 class CategoryFilterChips extends StatefulWidget {
   final List<Category> categories;
-  final int? selectedCategoryId; // External state (after data loads)
+  final int? selectedCategoryId;
   final Function(int?) onCategorySelected;
   final bool isProductsLoading;
   final EdgeInsets? padding;
@@ -25,7 +25,7 @@ class CategoryFilterChips extends StatefulWidget {
 }
 
 class _CategoryFilterChipsState extends State<CategoryFilterChips> {
-  int? _internalSelectedId; // Internal state for quick UI feedback
+  int? _internalSelectedId;
 
   static const double _chipSpacing = 8.0;
   static const double _chipBorderRadius = 20.0;
@@ -143,7 +143,6 @@ class _CategoryFilterChipsState extends State<CategoryFilterChips> {
       ),
       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
       visualDensity: VisualDensity.compact,
-      // Show loading state subtly
       elevation: widget.isProductsLoading && isSelected ? 1 : 0,
     );
   }
